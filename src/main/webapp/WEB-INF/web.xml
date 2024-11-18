@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" 
+         version="3.1">
+
+    <display-name>Music Collaboration Platform</display-name>
+
+    <!-- Servlet Definitions -->
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.musiccollab.servlets.UserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProjectServlet</servlet-name>
+        <servlet-class>com.musiccollab.servlets.ProjectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MusicFileServlet</servlet-name>
+        <servlet-class>com.musiccollab.servlets.MusicFileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PortfolioServlet</servlet-name>
+        <servlet-class>com.musiccollab.servlets.PortfolioServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProjectServlet</servlet-name>
+        <url-pattern>/projects</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MusicFileServlet</servlet-name>
+        <url-pattern>/music-files</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PortfolioServlet</servlet-name>
+        <url-pattern>/portfolios</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

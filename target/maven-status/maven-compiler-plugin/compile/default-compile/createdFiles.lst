@@ -1,0 +1,14 @@
+com\musiccollab\models\User.class
+com\musiccollab\dao\MusicFileDAO.class
+com\musiccollab\models\Portfolio.class
+com\musiccollab\models\MusicFile.class
+com\musiccollab\servlets\UserServlet.class
+com\musiccollab\dao\UserDAO.class
+com\musiccollab\servlets\ProjectServlet.class
+com\musiccollab\models\Admin.class
+com\musiccollab\servlets\PortfolioServlet.class
+com\musiccollab\servlets\MusicFileServlet.class
+com\musiccollab\connection\DBConnection.class
+com\musiccollab\dao\ProjectDAO.class
+com\musiccollab\models\Project.class
+com\musiccollab\dao\PortfolioDAO.class
